@@ -14,7 +14,7 @@
 RELEASE ?= 1
 
 # Path where game data is installed
-DATADIR ?= /usr/local/share/games/jfsw
+DATADIR ?= data
 
 # Engine source code path
 EROOT ?= jfbuild
@@ -33,7 +33,7 @@ AUDIOLIBROOT ?= jfaudiolib
 #     Define as USE_GLES2 (or 12) for GLES 2.0 profile
 #  USE_ASM        - enables the use of assembly code
 USE_POLYMOST ?= 1
-USE_OPENGL ?= 1
+USE_OPENGL ?= 0
 USE_ASM ?= 1
 
 

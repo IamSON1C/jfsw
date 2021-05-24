@@ -94,6 +94,11 @@ Things required to make savegames work:
 #include "startwin.h"
 #include "version.h"
 
+#ifdef __amigaos4__
+static const char* __attribute__((used)) version = VERSTAG;
+static const char* __attribute__((used)) stackcookie = "$STACK: 500000";
+#endif
+
 #if DEBUG
 #define BETA 0
 #endif

@@ -1214,7 +1214,7 @@ SoundStartup(void)
     initdata = (void *) win_gethwnd();
 #endif
 
-    //gs.FxOn = TRUE;
+    gs.FxOn = TRUE;
 
         status = FX_Init(fxdevicetype, NumVoices, &NumChannels, &NumBits, &MixRate, initdata);
         if (status == FX_Ok)

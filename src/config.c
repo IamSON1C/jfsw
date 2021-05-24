@@ -210,9 +210,14 @@ void CONFIG_SetDefaults( void )
    ScreenBPP = 8;
    FXDevice = 0;
    MusicDevice = 0;
-   NumVoices = 32;
    NumChannels = 2;
+#ifndef __amigaos4__
+   NumVoices = 32;
    NumBits = 16;
+#else
+   NumVoices = 16;
+   NumBits = 8;
+#endif   
    MixRate = 44100;
    MusicParams[0] = 0;
    memcpy(&gs, &gs_defaults, sizeof(gs));
